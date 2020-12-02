@@ -108,6 +108,7 @@ public class SysMenuController extends BaseController
             return AjaxResult.error("新增菜单'" + menu.getMenuName() + "'失败，地址必须以http(s)://开头");
         }
         menu.setCreateBy(SecurityUtils.getUsername());
+        menu.setProjectId("1");
         return toAjax(menuService.insertMenu(menu));
     }
 

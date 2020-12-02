@@ -21,9 +21,6 @@ public class MenuController extends BaseController {
     @Resource
     private ISysMenuService menuService;
 
-    @Resource
-    private SysMenuMapper menuMapper;
-
     /**
      * 获取路由信息
      *
@@ -32,7 +29,7 @@ public class MenuController extends BaseController {
     @GetMapping("/getRouters")
     public AjaxResult getRouters(String projectId) {
 
-        List<SysMenu> menus = menuMapper.selectMenuTreeAll();
+        List<SysMenu> menus = menuService.selectAllMenuTree();
         List<SysMenu> result = new ArrayList<>();
         if (!StringUtils.isEmpty(projectId)) {
             for (SysMenu m : menus) {
