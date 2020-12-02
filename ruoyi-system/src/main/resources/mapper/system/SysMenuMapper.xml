@@ -24,10 +24,11 @@
 		<result property="updateTime"     column="update_time"    />
 		<result property="updateBy"       column="update_by"      />
 		<result property="remark"         column="remark"         />
+		<result property="projectId"         column="project_id"         />
 	</resultMap>
 
 	<sql id="selectMenuVo">
-        select menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, ifnull(perms,'') as perms, icon, create_time 
+        select menu_id, menu_name, parent_id, order_num, path, component, is_frame, is_cache, menu_type, visible, status, ifnull(perms,'') as perms, icon, create_time ,project_id
 		from sys_menu
     </sql>
     
@@ -48,7 +49,7 @@
 	</select>
 	
 	<select id="selectMenuTreeAll" resultMap="SysMenuResult">
-		select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time
+		select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time,project_id
 		from sys_menu m where m.menu_type in ('M', 'C') and m.status = 0
 		order by m.parent_id, m.order_num
 	</select>

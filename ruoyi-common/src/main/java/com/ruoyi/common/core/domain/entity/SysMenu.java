@@ -59,6 +59,9 @@ public class SysMenu extends BaseEntity
     /** 菜单图标 */
     private String icon;
 
+    /**项目ID*/
+    private String projectId;
+
     /** 子菜单 */
     private List<SysMenu> children = new ArrayList<SysMenu>();
 
@@ -218,7 +221,15 @@ public class SysMenu extends BaseEntity
     {
         this.children = children;
     }
-    
+
+    public String getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(String projectId) {
+        this.projectId = projectId;
+    }
+
     @Override
     public String toString() {
         return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
