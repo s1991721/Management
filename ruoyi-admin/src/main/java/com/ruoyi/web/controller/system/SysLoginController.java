@@ -1,7 +1,10 @@
 package com.ruoyi.web.controller.system;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+
+import com.ruoyi.common.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -89,6 +92,13 @@ public class SysLoginController
         // 用户信息
         SysUser user = loginUser.getUser();
         List<SysMenu> menus = menuService.selectMenuTreeByUserId(user.getUserId());
-        return AjaxResult.success(menuService.buildMenus(menus));
+        List<SysMenu> result = new ArrayList<>();
+        for (SysMenu m : menus) {
+            if (StringUtils.isEmpty(m.getProjectId())) {
+                result.add(m);
+            }
+        }
+
+        return AjaxResult.success(menuService.buildMenus(result));
     }
 }
