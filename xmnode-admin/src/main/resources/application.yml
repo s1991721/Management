@@ -1,5 +1,5 @@
 # 项目相关配置
-ruoyi:
+xmnode:
   # 名称
   name: RuoYi
   # 版本
@@ -8,7 +8,7 @@ ruoyi:
   copyrightYear: 2020
   # 实例演示开关
   demoEnabled: true
-  # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
+  # 文件路径 示例（ Windows配置D:/uploadPath，Linux配置 /home/uploadPath）
   profile: D:/uploadPath
   # 获取ip地址开关
   addressEnabled: false

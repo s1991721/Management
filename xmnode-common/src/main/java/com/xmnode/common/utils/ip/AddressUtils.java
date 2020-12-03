@@ -1,7 +1,7 @@
 package com.xmnode.common.utils.ip;
 
 import com.alibaba.fastjson.JSONObject;
-import com.xmnode.common.config.RuoYiConfig;
+import com.xmnode.common.config.XMNodeConfig;
 import com.xmnode.common.constant.Constants;
 import com.xmnode.common.utils.StringUtils;
 import com.xmnode.common.utils.http.HttpUtils;
@@ -26,7 +26,7 @@ public class AddressUtils {
         if (IpUtils.internalIp(ip)) {
             return "内网IP";
         }
-        if (RuoYiConfig.isAddressEnabled()) {
+        if (XMNodeConfig.isAddressEnabled()) {
             try {
                 String rspStr = HttpUtils.sendGet(IP_URL, "ip=" + ip + "&json=true", Constants.GBK);
                 if (StringUtils.isEmpty(rspStr)) {

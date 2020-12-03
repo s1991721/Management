@@ -1,6 +1,6 @@
 package com.xmnode.web.core.config;
 
-import com.xmnode.common.config.RuoYiConfig;
+import com.xmnode.common.config.XMNodeConfig;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -30,7 +30,7 @@ public class SwaggerConfig {
      * 系统基础配置
      */
     @Autowired
-    private RuoYiConfig ruoyiConfig;
+    private XMNodeConfig ruoyiConfig;
 
     /**
      * 是否开启swagger

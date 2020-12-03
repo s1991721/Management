@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
  * @author Mr.Lin
  */
 @Component
-@ConfigurationProperties(prefix = "ruoyi")
-public class RuoYiConfig {
+@ConfigurationProperties(prefix = "xmnode")
+public class XMNodeConfig {
     /**
      * 上传路径
      */
@@ -41,7 +41,7 @@ public class RuoYiConfig {
     }
 
     public void setProfile(String profile) {
-        RuoYiConfig.profile = profile;
+        XMNodeConfig.profile = profile;
     }
 
     public static boolean isAddressEnabled() {
@@ -49,7 +49,7 @@ public class RuoYiConfig {
     }
 
     public void setAddressEnabled(boolean addressEnabled) {
-        RuoYiConfig.addressEnabled = addressEnabled;
+        XMNodeConfig.addressEnabled = addressEnabled;
     }
 
     /**

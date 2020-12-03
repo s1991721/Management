@@ -1,7 +1,7 @@
 package com.xmnode.web.controller.system;
 
 import com.xmnode.common.annotation.Log;
-import com.xmnode.common.config.RuoYiConfig;
+import com.xmnode.common.config.XMNodeConfig;
 import com.xmnode.common.core.controller.BaseController;
 import com.xmnode.common.core.domain.AjaxResult;
 import com.xmnode.common.core.domain.entity.SysUser;
@@ -96,7 +96,7 @@ public class SysProfileController extends BaseController {
     public AjaxResult avatar(@RequestParam("avatarfile") MultipartFile file) throws IOException {
         if (!file.isEmpty()) {
             LoginUser loginUser = tokenService.getLoginUser(ServletUtils.getRequest());
-            String avatar = FileUploadUtils.upload(RuoYiConfig.getAvatarPath(), file);
+            String avatar = FileUploadUtils.upload(XMNodeConfig.getAvatarPath(), file);
             if (userService.updateUserAvatar(loginUser.getUsername(), avatar)) {
                 AjaxResult ajax = AjaxResult.success();
                 ajax.put("imgUrl", avatar);
