@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/open")
@@ -51,11 +52,26 @@ public class OpenController extends BaseController {
         return AjaxResult.success(menuService.buildMenus(result));
     }
 
+    /**
+     * 通过用户名获取用户信息
+     *
+     * @return 用户信息
+     */
     @PostMapping("/getUserByName")
     public SysUser getUserByName(String username){
         SysUser user = userService.selectUserByUserName(username);
         return  user;
     }
 
+    /**
+     * 根据用户ID查询权限
+     *
+     * @param userId 用户ID
+     * @return 权限列表
+     */
+    @PostMapping("/selectMenuPermsByUserId")
+    public Set<String> selectMenuPermsByUserId(Long userId){
+        return menuService.selectMenuPermsByUserId(userId);
+    }
 
 }
