@@ -5,10 +5,8 @@ import com.ruoyi.common.core.domain.AjaxResult;
 import com.ruoyi.common.core.domain.entity.SysMenu;
 import com.ruoyi.common.core.domain.entity.SysUser;
 import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.system.mapper.SysMenuMapper;
 import com.ruoyi.system.service.ISysMenuService;
 import com.ruoyi.system.service.ISysUserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -58,9 +56,9 @@ public class OpenController extends BaseController {
      * @return 用户信息
      */
     @PostMapping("/getUserByName")
-    public SysUser getUserByName(String username){
+    public SysUser getUserByName(String username) {
         SysUser user = userService.selectUserByUserName(username);
-        return  user;
+        return user;
     }
 
     /**
@@ -70,7 +68,7 @@ public class OpenController extends BaseController {
      * @return 权限列表
      */
     @PostMapping("/selectMenuPermsByUserId")
-    public Set<String> selectMenuPermsByUserId(Long userId){
+    public Set<String> selectMenuPermsByUserId(Long userId) {
         return menuService.selectMenuPermsByUserId(userId);
     }
 
