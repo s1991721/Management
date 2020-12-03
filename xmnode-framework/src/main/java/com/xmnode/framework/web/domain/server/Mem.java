@@ -5,7 +5,7 @@ import com.xmnode.common.utils.Arith;
 /**
  * 內存相关信息
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class Mem {
     /**

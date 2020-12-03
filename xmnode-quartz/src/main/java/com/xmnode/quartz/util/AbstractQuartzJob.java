@@ -20,7 +20,7 @@ import java.util.Date;
 /**
  * 抽象quartz调用
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public abstract class AbstractQuartzJob implements Job {
     private static final Logger log = LoggerFactory.getLogger(AbstractQuartzJob.class);

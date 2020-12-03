@@ -3,7 +3,7 @@ package com.xmnode.common.enums;
 /**
  * 操作状态
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public enum BusinessStatus {
     /**

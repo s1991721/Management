@@ -3,7 +3,7 @@ package com.xmnode.common.exception;
 /**
  * 自定义异常
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class CustomException extends RuntimeException {
     private static final long serialVersionUID = 1L;

@@ -3,7 +3,7 @@ package com.xmnode.common.constant;
 /**
  * 通用常量信息
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class Constants {
     /**

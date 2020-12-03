@@ -3,7 +3,7 @@ package com.xmnode.common.constant;
 /**
  * 代码生成通用常量
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class GenConstants {
     /**

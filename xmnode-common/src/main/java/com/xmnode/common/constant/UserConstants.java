@@ -3,7 +3,7 @@ package com.xmnode.common.constant;
 /**
  * 用户常量信息
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class UserConstants {
     /**

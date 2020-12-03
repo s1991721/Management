@@ -3,7 +3,7 @@ package com.xmnode.system.domain.vo;
 /**
  * 路由显示信息
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class MetaVo {
     /**

@@ -6,7 +6,7 @@ import com.xmnode.system.domain.SysUserOnline;
 /**
  * 在线用户 服务层
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public interface ISysUserOnlineService {
     /**

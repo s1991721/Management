@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 模板处理工具类
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class VelocityUtils {
     /**

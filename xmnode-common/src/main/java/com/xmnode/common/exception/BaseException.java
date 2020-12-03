@@ -6,7 +6,7 @@ import com.xmnode.common.utils.StringUtils;
 /**
  * 基础异常
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class BaseException extends RuntimeException {
     private static final long serialVersionUID = 1L;

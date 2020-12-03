@@ -5,7 +5,7 @@ import com.xmnode.common.utils.StringUtils;
 /**
  * 字符串格式化
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class StrFormatter {
     public static final String EMPTY_JSON = "{}";

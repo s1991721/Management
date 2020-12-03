@@ -3,7 +3,7 @@ package com.xmnode.common.enums;
 /**
  * 业务操作类型
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public enum BusinessType {
     /**

@@ -3,7 +3,7 @@ package com.xmnode.common.enums;
 /**
  * 操作人类别
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public enum OperatorType {
     /**

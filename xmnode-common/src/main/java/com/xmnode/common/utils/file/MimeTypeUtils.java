@@ -3,7 +3,7 @@ package com.xmnode.common.utils.file;
 /**
  * 媒体类型工具类
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class MimeTypeUtils {
     public static final String IMAGE_PNG = "image/png";

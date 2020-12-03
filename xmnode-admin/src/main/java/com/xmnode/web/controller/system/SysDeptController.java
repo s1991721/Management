@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 部门信息
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 @RestController
 @RequestMapping("/system/dept")

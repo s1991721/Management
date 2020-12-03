@@ -3,7 +3,7 @@ package com.xmnode.system.domain;
 /**
  * 当前在线会话
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class SysUserOnline {
     /**

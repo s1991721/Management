@@ -3,7 +3,7 @@ package com.xmnode.common.core.domain.model;
 /**
  * 用户登录对象
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class LoginBody {
     /**

@@ -3,7 +3,7 @@ package com.xmnode.common.exception.user;
 /**
  * 验证码失效异常类
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class CaptchaExpireException extends UserException {
     private static final long serialVersionUID = 1L;

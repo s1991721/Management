@@ -3,7 +3,7 @@ package com.xmnode.common.exception.job;
 /**
  * 计划策略异常
  *
- * @author ruoyi
+ * @author Mr.Lin
  */
 public class TaskException extends Exception {
     private static final long serialVersionUID = 1L;
